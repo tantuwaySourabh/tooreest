@@ -1,0 +1,211 @@
+[
+  {
+    "countryId": 0,
+    "countryName": "Select country",
+    "currency": "",
+    "currencySymbol": "",
+    "listCities": [
+      {
+        "cityId": 0,
+        "cityName": "Select city",
+        "countryId": 0
+      }
+    ],
+    "mobileCode": ""
+  },
+  {
+    "countryId": 1,
+    "countryName": "India",
+    "currency": "INR",
+    "currencySymbol": "\u20b9",
+    "listCities": [
+      {
+        "cityId": 0,
+        "cityName": "Select city",
+        "countryId": 0
+      },
+      {
+        "cityId": 1,
+        "cityName": "Raipur",
+        "countryId": 1
+      },
+      {
+        "cityId": 2,
+        "cityName": "Indore",
+        "countryId": 1
+      }
+    ],
+    "mobileCode": "91"
+  },
+  {
+    "countryId": 2,
+    "countryName": "Singapore",
+    "currency": "Euro",
+    "currencySymbol": "\u20ac",
+    "listCities": [
+      {
+        "cityId": 0,
+        "cityName": "Select city",
+        "countryId": 0
+      },
+      {
+        "cityId": 1,
+        "cityName": "Chinatown",
+        "countryId": 2
+      }
+    ],
+    "mobileCode": "65"
+  },
+  {
+    "countryId": 3,
+    "countryName": "Malaysia",
+    "currency": "Malaysian ringgit",
+    "currencySymbol": "\u004d",
+    "listCities": [
+      {
+        "cityId": 0,
+        "cityName": "Select city",
+        "countryId": 0
+      },
+      {
+        "cityId": 1,
+        "cityName": "Kuala Lumpur",
+        "countryId": 3
+      }
+    ],
+    "mobileCode": "60"
+  },
+  {
+    "countryId": 4,
+    "countryName": "Thailand",
+    "currency": "Thai baht",
+    "currencySymbol": "\u0e3f",
+    "listCities": [
+      {
+        "cityId": 0,
+        "cityName": "Select city",
+        "countryId": 0
+      },
+      {
+        "cityId": 1,
+        "cityName": "Bangkok",
+        "countryId": 4
+      }
+    ],
+    "mobileCode": "66"
+  },
+  {
+    "countryId": 5,
+    "countryName": "Indonesia",
+    "currency": "Indonesian rupiah",
+    "currencySymbol": "\u0070",
+    "listCities": [
+      {
+        "cityId": 0,
+        "cityName": "Select city",
+        "countryId": 0
+      },
+      {
+        "cityId": 1,
+        "cityName": "Jakarta",
+        "countryId": 5
+      }
+    ],
+    "mobileCode": "62"
+  },
+  {
+    "countryId": 6,
+    "countryName": "Philippines",
+    "currency": "Philippine peso",
+    "currencySymbol": "\u20b1",
+    "listCities": [
+      {
+        "cityId": 0,
+        "cityName": "Select city",
+        "countryId": 0
+      },
+      {
+        "cityId": 1,
+        "cityName": "Manila",
+        "countryId": 6
+      }
+    ],
+    "mobileCode": "63"
+  },
+  {
+    "countryId": 7,
+    "countryName": "Vietnam",
+    "currency": "Vietnamese dong",
+    "currencySymbol": "\u20ab",
+    "listCities": [
+      {
+        "cityId": 0,
+        "cityName": "Select city",
+        "countryId": 0
+      },
+      {
+        "cityId": 1,
+        "cityName": "Hanoi",
+        "countryId": 7
+      }
+    ],
+    "mobileCode": "84"
+  },
+  {
+    "countryId": 8,
+    "countryName": "Myanmar",
+    "currency": "Burmese kyat",
+    "currencySymbol": "\u004b",
+    "listCities": [
+      {
+        "cityId": 0,
+        "cityName": "Select city",
+        "countryId": 0
+      },
+      {
+        "cityId": 1,
+        "cityName": "Naypyidaw",
+        "countryId": 8
+      }
+    ],
+    "mobileCode": "95"
+  },
+  {
+    "countryId": 9,
+    "countryName": "Cambodia",
+    "currency": "Cambodian riel",
+    "currencySymbol": "\u004b",
+    "listCities": [
+      {
+        "cityId": 0,
+        "cityName": "Select city",
+        "countryId": 0
+      },
+      {
+        "cityId": 1,
+        "cityName": "Phnom Penh",
+        "countryId": 9
+      }
+    ],
+    "mobileCode": "855"
+  },
+  {
+    "countryId": 10,
+    "countryName": "Hong Kong",
+    "currency": "Hong Kong dollar",
+    "currencySymbol": "\u0024",
+    "listCities": [
+      {
+        "cityId": 0,
+        "cityName": "Select city",
+        "countryId": 0
+      },
+      {
+        "cityId": 1,
+        "cityName": "Victoria",
+        "countryId": 10
+      }
+    ],
+    "mobileCode": "852"
+  }
+]

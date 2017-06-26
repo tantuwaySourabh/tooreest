@@ -1,0 +1,78 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_toolbar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/black_circle"
+                android:padding="20dp"
+                android:scaleType="center"
+                android:src="@mipmap/c_wallet" />
+
+            <com.ebabu.tooreest.customview.CustomEditText
+                android:id="@+id/et_amount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/bottom_line_gray"
+                android:gravity="center"
+                android:hint="@string/enter_amount"
+                android:inputType="number"
+                android:maxLength="4"
+                android:padding="10dp"
+                android:textColor="@color/primaryColor"
+                android:textSize="25sp"
+                app:edittextfont="ROBOTO-BOLD.TTF"
+                app:edittextfontHint="ROBOTO-REGULAR.TTF" />
+
+            <com.ebabu.tooreest.customview.CustomTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="30dp"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:text="@string/withdraw_condition"
+                android:textSize="14sp"
+                app:edittextfont="ROBOTO-LIGHT.TTF"
+                app:edittextfontHint="ROBOTO-LIGHT.TTF" />
+
+            <com.ebabu.tooreest.customview.CustomTextView
+                android:id="@+id/btn_withdraw"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="40dp"
+                android:background="@drawable/yellow_rounded_solid_bg"
+                android:gravity="center"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                android:text="@string/withdraw"
+                android:textColor="@color/white"
+                app:edittextfont="ROBOTO-REGULAR.TTF"
+                app:edittextfontHint="ROBOTO-REGULAR.TTF" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

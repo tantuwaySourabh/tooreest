@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="5dp"
+    android:background="@color/lol_red"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:paddingBottom="5dp"
+    android:paddingTop="5dp">
+
+    <com.ebabu.tooreest.customview.CustomTextView
+        android:id="@+id/tv_subcat"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_weight="1"
+        android:text=""
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        app:edittextfont="ROBOTO-REGULAR.TTF"
+        app:edittextfontHint="ROBOTO-REGULAR.TTF" />
+
+    <com.ebabu.tooreest.customview.CustomTextView
+        android:id="@+id/tv_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:background="@drawable/white_rounded_solid_bg"
+        android:minWidth="40dp"
+        android:paddingBottom="1dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:paddingTop="1dp"
+        android:text="\u20b9 100"
+        android:textColor="@color/lol_red"
+        android:textSize="14sp"
+        app:edittextfont="ROBOTO-REGULAR.TTF"
+        app:edittextfontHint="ROBOTO-REGULAR.TTF" />
+
+    <ImageView
+        android:id="@+id/btn_remove"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:clickable="true"
+        android:focusable="true"
+        android:padding="10dp"
+        android:src="@mipmap/cross" />
+</LinearLayout>

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="bottom">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_marginRight="10dp">
+
+            <com.ebabu.tooreest.customview.CustomTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="From"
+                android:textColor="@color/primaryColor"
+                android:textSize="12sp"
+                app:edittextfont="ROBOTO-REGULAR.TTF" />
+
+            <com.ebabu.tooreest.customview.CustomTextView
+                android:id="@+id/et_from"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:background="@drawable/gray_rounded_corner_bg"
+                android:gravity="left|top"
+                android:hint="Start Time"
+                android:inputType="textCapSentences"
+                android:padding="10dp"
+                android:singleLine="true"
+                android:textColor="@color/primary_text_color"
+                android:textColorHint="@color/divider_color"
+                android:textSize="16sp"
+                app:edittextfont="ROBOTO-REGULAR.TTF"
+                app:edittextfontHint="ROBOTO-REGULAR.TTF" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_marginRight="10dp">
+
+            <com.ebabu.tooreest.customview.CustomTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="To"
+                android:textColor="@color/primaryColor"
+                android:textSize="12sp"
+                app:edittextfont="ROBOTO-REGULAR.TTF" />
+
+            <com.ebabu.tooreest.customview.CustomTextView
+                android:id="@+id/et_to"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:background="@drawable/gray_rounded_corner_bg"
+                android:gravity="left|top"
+                android:hint="End Time"
+                android:inputType="textCapSentences"
+                android:padding="10dp"
+                android:singleLine="true"
+                android:textColor="@color/primary_text_color"
+                android:textColorHint="@color/divider_color"
+                android:textSize="16sp"
+                app:edittextfont="ROBOTO-REGULAR.TTF"
+                app:edittextfontHint="ROBOTO-REGULAR.TTF" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/btn_add_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/yellow_circle"
+            android:src="@mipmap/cross"
+            android:rotation="45"
+            android:padding="8dp"
+            android:scaleType="fitCenter"
+            android:gravity="center"/>
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_timings"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none"
+        android:layout_marginTop="10dp"/>
+</LinearLayout>

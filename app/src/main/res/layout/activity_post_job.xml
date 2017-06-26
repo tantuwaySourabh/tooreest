@@ -1,0 +1,240 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f4f4f4"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_toolbar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:orientation="vertical">
+
+            <Spinner
+                android:id="@+id/spinner_project_category"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/spinner_bg_white_round"
+                android:spinnerMode="dialog" />
+
+            <Spinner
+                android:id="@+id/spinner_subcategories"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/spinner_bg_white_round"
+                android:spinnerMode="dialog"
+                android:visibility="visible" />
+
+            <Spinner
+                android:id="@+id/spinner_location"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/spinner_bg_white_round"
+                android:spinnerMode="dialog"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/white_rounded_solid_bg"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <com.ebabu.tooreest.customview.CustomTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/does_require_local_provider"
+                    android:textColor="@color/primary_text_color"
+                    android:textSize="14sp"
+                    app:edittextfont="ROBOTO-REGULAR.TTF"
+                    app:edittextfontHint="ROBOTO-REGULAR.TTF" />
+
+                <com.rey.material.widget.Switch
+                    android:id="@+id/switch_require_local"
+                    style="@style/Material.Widget.Switch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    app:sw_thumbRadius="11dp"
+                    app:sw_trackCap="round"
+
+                    app:sw_trackSize="16dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/white_rounded_solid_bg"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <com.ebabu.tooreest.customview.CustomTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/describe_your_work"
+                    android:textColor="@color/primary_text_color"
+                    android:textSize="14sp"
+                    app:edittextfont="ROBOTO-REGULAR.TTF"
+                    app:edittextfontHint="ROBOTO-REGULAR.TTF" />
+
+                <com.ebabu.tooreest.customview.CustomEditText
+                    android:id="@+id/et_work_description"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/white_rounded_solid_bg"
+                    android:gravity="top|left"
+                    android:singleLine="false"
+                    android:scrollbars="vertical"
+                    android:inputType="textCapSentences|textMultiLine"
+                    android:textColor="@color/primary_text_color"
+                    android:textColorHint="@color/primary_text_color"
+                    android:textSize="14sp"
+                    app:edittextfont="ROBOTO-REGULAR.TTF"
+                    app:edittextfontHint="ROBOTO-REGULAR.TTF" />
+            </LinearLayout>
+
+
+            <Spinner
+                android:id="@+id/spinner_sub_skills"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/spinner_bg_white_round"
+                android:spinnerMode="dialog"
+                android:visibility="gone" />
+
+            <com.ebabu.tooreest.customview.CustomEditText
+                android:id="@+id/et_budget"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/white_rounded_solid_bg"
+                android:hint="@string/budget_in_mind"
+                android:inputType="number"
+                android:maxLength="5"
+                android:paddingBottom="15dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="15dp"
+                android:textColor="@color/primary_text_color"
+                android:textColorHint="@color/primary_text_color"
+                android:textSize="14sp"
+                app:edittextfont="ROBOTO-REGULAR.TTF"
+                app:edittextfontHint="ROBOTO-REGULAR.TTF" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/white_rounded_solid_bg"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <com.ebabu.tooreest.customview.CustomTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/set_urgent_work"
+                    android:textColor="@color/primary_text_color"
+                    android:textSize="14sp"
+                    app:edittextfont="ROBOTO-REGULAR.TTF"
+                    app:edittextfontHint="ROBOTO-REGULAR.TTF" />
+
+                <com.rey.material.widget.Switch
+                    android:id="@+id/switch_urgent_work"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:thumbTextPadding="2dp"
+                    app:sw_thumbRadius="11dp"
+                    app:sw_trackCap="round"
+                    app:sw_trackSize="16dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/white_rounded_solid_bg"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="10dp">
+
+                <com.ebabu.tooreest.customview.CustomTextView
+                    android:id="@+id/btn_view_uploaded_files"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/dashed_gray_bg"
+                    android:drawableLeft="@mipmap/plus"
+                    android:drawablePadding="10dp"
+                    android:padding="10dp"
+                    android:text="@string/upload_files"
+                    android:gravity="center"
+                    android:textColor="@color/primary_text_color"
+                    android:textSize="16sp"
+                    app:edittextfont="ROBOTO-REGULAR.TTF"
+                    app:edittextfontHint="ROBOTO-REGULAR.TTF" />
+
+                <com.ebabu.tooreest.customview.CustomTextView
+                    android:id="@+id/tv_upload_message"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:text="@string/upload_file_message"
+                    android:textColor="@color/primary_text_color"
+                    android:textSize="12sp"
+                    app:edittextfont="ROBOTO-REGULAR.TTF"
+                    app:edittextfontHint="ROBOTO-REGULAR.TTF" />
+
+                <ImageView
+                    android:id="@+id/iv_image"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:padding="1px"
+                    android:background="@drawable/gray_rounded_corner_bg"
+                    android:layout_marginLeft="30dp"
+                    android:scaleType="centerCrop"
+                    android:visibility="gone"/>
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </ScrollView>
+
+    <com.ebabu.tooreest.customview.CustomTextView
+        android:id="@+id/btn_post_a_job"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center_horizontal"
+        android:layout_margin="10dp"
+        android:background="@drawable/yellow_rounded_solid_bg"
+        android:clickable="true"
+        android:focusable="true"
+        android:foreground="?attr/selectableItemBackground"
+        android:gravity="center"
+        android:paddingBottom="12dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:paddingTop="12dp"
+        android:text="POST JOB"
+        android:textColor="#FFFFFF"
+        android:textSize="15sp"
+        app:edittextfont="ROBOTO-REGULAR.TTF" />
+</LinearLayout>

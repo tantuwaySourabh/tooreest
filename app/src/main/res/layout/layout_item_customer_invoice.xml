@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/layout_main_item"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clickable="true"
+    android:focusable="true"
+    android:foreground="?attr/selectableItemBackground"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+
+    <com.ebabu.tooreest.customview.CustomTextView
+        android:id="@+id/tv_booking_num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Booking No. 1"
+        android:textColor="@color/primary_text_color"
+        android:textSize="14sp"
+        app:edittextfont="ROBOTO-MEDIUM.TTF"
+        app:edittextfontHint="ROBOTO-MEDIUM.TTF" />
+
+    <com.ebabu.tooreest.customview.CustomTextView
+        android:id="@+id/tv_provider_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="Parth Sarthi"
+        android:textColor="@color/accentColor"
+        android:textSize="16sp"
+        app:edittextfont="ROBOTO-MEDIUM.TTF"
+        app:edittextfontHint="ROBOTO-MEDIUM.TTF" />
+
+    <com.ebabu.tooreest.customview.CustomTextView
+        android:id="@+id/tv_service"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Service: House Painter"
+        android:textColor="@color/primary_text_color"
+        android:textSize="14sp"
+        android:layout_marginTop="2dp"
+        app:edittextfont="ROBOTO-REGULAR.TTF"
+        app:edittextfontHint="ROBOTO-REGULAR.TTF" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="2dp">
+
+        <com.ebabu.tooreest.customview.CustomTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Charges: "
+            android:textColor="@color/primary_text_color"
+            android:textSize="14sp"
+            app:edittextfont="ROBOTO-REGULAR.TTF"
+            app:edittextfontHint="ROBOTO-REGULAR.TTF" />
+
+        <com.ebabu.tooreest.customview.CustomTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="\u20b9 10,000"
+            android:textColor="@color/accentColor"
+            android:textSize="14sp"
+            app:edittextfont="ROBOTO-REGULAR.TTF"
+            app:edittextfontHint="ROBOTO-REGULAR.TTF" />
+    </LinearLayout>
+
+    <com.ebabu.tooreest.customview.CustomTextView
+        android:id="@+id/tv_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Date: 30 Dec, 2016"
+        android:layout_marginTop="2dp"
+        android:textColor="@color/primary_text_color"
+        android:textSize="14sp"
+        app:edittextfont="ROBOTO-REGULAR.TTF"
+        app:edittextfontHint="ROBOTO-REGULAR.TTF" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <com.ebabu.tooreest.customview.CustomTextView
+            android:id="@+id/btn_reschedule"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/accentColor"
+            android:drawableLeft="@mipmap/paynow"
+            android:gravity="center"
+            android:paddingBottom="5dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="5dp"
+            android:singleLine="true"
+            android:text="Pay Now"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            app:edittextfont="ROBOTO-REGULAR.TTF"
+            app:edittextfontHint="ROBOTO-REGULAR.TTF" />
+
+        <com.ebabu.tooreest.customview.CustomTextView
+            android:id="@+id/btn_repeat"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:background="@color/accentColor"
+            android:drawableLeft="@mipmap/download"
+            android:gravity="center"
+            android:paddingBottom="5dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="5dp"
+            android:singleLine="true"
+            android:text="Download"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            app:edittextfont="ROBOTO-REGULAR.TTF"
+            app:edittextfontHint="ROBOTO-REGULAR.TTF" />
+
+    </LinearLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginTop="10dp"
+        android:background="@color/divider_color" />
+</LinearLayout>

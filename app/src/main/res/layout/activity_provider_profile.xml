@@ -1,0 +1,490 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_toolbar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#f4f4f4"
+        android:scrollbars="none">
+
+        <!--<ImageView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:scaleType="centerCrop"-->
+        <!--android:src="@mipmap/bg" />-->
+
+        <LinearLayout
+            android:id="@+id/layout_profile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/primaryColor"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_marginTop="10dp">
+
+                <com.ebabu.tooreest.customview.CustomTextView
+                    android:id="@+id/tv_profile_pic_bg"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/yellow_circle"
+                    android:gravity="center"
+                    android:text="MR"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    app:edittextfont="ROBOTO-BOLD.TTF" />
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/tv_profile_pic"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:enabled="false"
+                    android:src="@mipmap/profile"
+                    app:civ_border_color="@color/divider_color"
+                    app:civ_border_width="1dp" />
+
+            </FrameLayout>
+
+
+            <com.ebabu.tooreest.customview.CustomEditText
+                android:id="@+id/tv_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="10dp"
+                android:background="@android:color/transparent"
+                android:enabled="false"
+                android:gravity="center"
+                android:hint="@string/enter_name"
+                android:inputType="textCapWords"
+                android:padding="5dp"
+                android:singleLine="true"
+                android:text="Mohit Rajput"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                app:edittextfont="ROBOTO-REGULAR.TTF" />
+
+            <com.ebabu.tooreest.customview.CustomEditText
+                android:id="@+id/et_phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@android:color/transparent"
+                android:enabled="false"
+                android:gravity="center"
+                android:hint="@string/enter_mobile_number"
+                android:inputType="number"
+                android:maxLength="13"
+                android:padding="5dp"
+                android:text="+918867584867"
+                android:textColor="@color/white"
+                android:textColorHint="@color/divider_color"
+                android:textSize="12sp"
+                app:edittextfont="ROBOTO-REGULAR.TTF"
+                app:edittextfontHint="ROBOTO-REGULAR.TTF" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#f4f4f4"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/white_rounded_solid_bg"
+                    android:orientation="vertical"
+                    android:padding="8dp">
+
+                    <com.ebabu.tooreest.customview.CustomEditText
+                        android:id="@+id/et_about_me"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/transparent"
+                        android:enabled="false"
+                        android:hint="@string/write_something_abt_u"
+                        android:inputType="textMultiLine|textCapSentences"
+                        android:maxLength="160"
+                        android:maxLines="3"
+                        android:text=""
+                        android:textColor="@color/primary_text_color"
+                        android:textColorHint="@color/divider_color"
+                        android:textSize="14sp"
+                        app:edittextfont="ROBOTO-REGULAR.TTF" />
+
+                    <com.ebabu.tooreest.customview.CustomTextView
+                        android:id="@+id/btn_read_more"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:layout_marginTop="10dp"
+                        android:text="@string/max_160_characters"
+                        android:textColor="@color/accentColor"
+                        android:textSize="12sp"
+                        app:edittextfont="ROBOTO-REGULAR.TTF" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <com.ebabu.tooreest.customview.CustomTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:hint="Guide type"
+                        android:textColor="@color/divider_color"
+                        android:textSize="16sp"
+                        app:edittextfont="ROBOTO-REGULAR.TTF"
+                        app:edittextfontHint="ROBOTO-REGULAR.TTF" />
+
+                    <RadioGroup
+                        android:id="@+id/rg_guide_type"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <android.support.v7.widget.AppCompatRadioButton
+                            android:id="@+id/rb_physical"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:tag="1"
+                            android:text="Physical"
+                            android:textColor="@color/divider_color"
+                            android:textSize="15sp"
+                            app:buttonTint="@color/accentColor" />
+
+                        <android.support.v7.widget.AppCompatRadioButton
+                            android:id="@+id/rb_virtual"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_weight="1"
+                            android:tag="2"
+                            android:text="Virtual"
+                            android:textColor="@color/divider_color"
+                            android:textSize="15sp"
+                            app:buttonTint="@color/accentColor" />
+
+                        <android.support.v7.widget.AppCompatRadioButton
+                            android:id="@+id/rb_both"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_weight="1"
+                            android:tag="3"
+                            android:text="Both"
+                            android:textColor="@color/divider_color"
+                            android:textSize="15sp"
+                            app:buttonTint="@color/accentColor" />
+                    </RadioGroup>
+                </LinearLayout>
+
+                <com.ebabu.tooreest.customview.CustomEditText
+                    android:id="@+id/et_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@android:color/transparent"
+                    android:drawableLeft="@mipmap/c_mail"
+                    android:drawablePadding="10dp"
+                    android:enabled="false"
+                    android:gravity="center_vertical"
+                    android:hint="@string/enter_email"
+                    android:inputType="textEmailAddress"
+                    android:padding="10dp"
+                    android:text="mohitrajput987@gmail.com"
+                    android:textColor="@color/primary_text_color"
+                    android:textColorHint="@color/divider_color"
+                    android:textSize="14sp"
+                    app:edittextfont="ROBOTO-REGULAR.TTF"
+                    app:edittextfontHint="ROBOTO-REGULAR.TTF" />
+
+                <com.ebabu.tooreest.customview.CustomEditText
+                    android:id="@+id/et_company_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@android:color/transparent"
+                    android:drawableLeft="@mipmap/c_loaction"
+                    android:drawablePadding="10dp"
+                    android:enabled="false"
+                    android:gravity="center_vertical"
+                    android:hint="@string/enter_company_name"
+                    android:inputType="textCapSentences"
+                    android:padding="10dp"
+                    android:singleLine="true"
+                    android:textColor="@color/primary_text_color"
+                    android:textColorHint="@color/divider_color"
+                    android:textSize="14sp"
+                    android:visibility="gone"
+
+                    app:edittextfont="ROBOTO-REGULAR.TTF"
+                    app:edittextfontHint="ROBOTO-REGULAR.TTF" />
+
+
+                <com.ebabu.tooreest.customview.CustomEditText
+                    android:id="@+id/et_postal_code"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@android:color/transparent"
+                    android:drawableLeft="@mipmap/c_loaction"
+                    android:drawablePadding="10dp"
+                    android:enabled="false"
+                    android:gravity="center_vertical"
+                    android:hint="@string/enter_pincode"
+                    android:inputType="number"
+                    android:maxLength="6"
+                    android:padding="10dp"
+                    android:singleLine="true"
+                    android:text="452001"
+                    android:textColor="@color/primary_text_color"
+                    android:textColorHint="@color/divider_color"
+                    android:textSize="14sp"
+                    android:visibility="gone"
+
+                    app:edittextfont="ROBOTO-REGULAR.TTF"
+                    app:edittextfontHint="ROBOTO-REGULAR.TTF" />
+
+                <com.ebabu.tooreest.customview.CustomTextView
+                    android:id="@+id/et_location"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@android:color/transparent"
+                    android:drawableLeft="@mipmap/c_loaction"
+                    android:drawablePadding="10dp"
+                    android:enabled="false"
+                    android:gravity="center_vertical"
+                    android:hint="@string/enter_address"
+                    android:inputType="textCapSentences"
+                    android:padding="10dp"
+                    android:singleLine="true"
+                    android:text="23, Chhoti Gwaltoli, Near Bus Stand, Indore"
+                    android:textColor="@color/primary_text_color"
+                    android:textColorHint="@color/divider_color"
+                    android:textSize="14sp"
+
+                    app:edittextfont="ROBOTO-REGULAR.TTF"
+                    app:edittextfontHint="ROBOTO-REGULAR.TTF" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/secondary_text_color" />
+
+                <com.ebabu.tooreest.customview.CustomEditText
+                    android:id="@+id/et_fb_link"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@android:color/transparent"
+                    android:drawableLeft="@mipmap/fb_yellow"
+                    android:drawablePadding="10dp"
+                    android:enabled="false"
+                    android:gravity="center_vertical"
+                    android:hint="@string/facebook_link"
+                    android:inputType="textUri"
+                    android:padding="10dp"
+                    android:singleLine="true"
+                    android:textColor="@color/primary_text_color"
+                    android:textColorHint="@color/divider_color"
+                    android:textSize="14sp"
+                    app:edittextfont="ROBOTO-REGULAR.TTF"
+                    app:edittextfontHint="ROBOTO-REGULAR.TTF" />
+
+                <com.ebabu.tooreest.customview.CustomEditText
+                    android:id="@+id/et_gplus_link"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@android:color/transparent"
+                    android:drawableLeft="@mipmap/gplus_yellow"
+                    android:drawablePadding="10dp"
+                    android:enabled="false"
+                    android:gravity="center_vertical"
+                    android:hint="@string/gplus_link"
+                    android:inputType="textUri"
+                    android:padding="10dp"
+                    android:singleLine="true"
+                    android:textColor="@color/primary_text_color"
+                    android:textColorHint="@color/divider_color"
+                    android:textSize="14sp"
+                    app:edittextfont="ROBOTO-REGULAR.TTF"
+                    app:edittextfontHint="ROBOTO-REGULAR.TTF" />
+
+                <com.ebabu.tooreest.customview.CustomEditText
+                    android:id="@+id/et_twitter_link"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@android:color/transparent"
+                    android:drawableLeft="@mipmap/twitter_yellow"
+                    android:drawablePadding="10dp"
+                    android:enabled="false"
+                    android:gravity="center_vertical"
+                    android:hint="@string/twitter_link"
+                    android:inputType="textUri"
+                    android:padding="10dp"
+                    android:singleLine="true"
+                    android:textColor="@color/primary_text_color"
+                    android:textColorHint="@color/divider_color"
+                    android:textSize="14sp"
+                    app:edittextfont="ROBOTO-REGULAR.TTF"
+                    app:edittextfontHint="ROBOTO-REGULAR.TTF" />
+
+                <com.ebabu.tooreest.customview.CustomEditText
+                    android:id="@+id/et_linkedin_link"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@android:color/transparent"
+                    android:drawableLeft="@mipmap/linkedin_yellow"
+                    android:drawablePadding="10dp"
+                    android:enabled="false"
+                    android:gravity="center_vertical"
+                    android:hint="@string/linkedin_link"
+                    android:inputType="textUri"
+                    android:padding="10dp"
+                    android:singleLine="true"
+                    android:textColor="@color/primary_text_color"
+                    android:textColorHint="@color/divider_color"
+                    android:textSize="14sp"
+                    app:edittextfont="ROBOTO-REGULAR.TTF"
+                    app:edittextfontHint="ROBOTO-REGULAR.TTF" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/secondary_text_color" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <Spinner
+                        android:id="@+id/spinner_language"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/spinner_bg_gray"
+                        android:spinnerMode="dialog"
+                        android:visibility="gone" />
+
+                    <com.ebabu.tooreest.customview.CustomEditText
+                        android:id="@+id/et_languages"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@android:color/transparent"
+                        android:enabled="false"
+                        android:gravity="center_vertical"
+                        android:hint="@string/languages_hint"
+                        android:inputType="textCapWords"
+                        android:padding="10dp"
+                        android:singleLine="true"
+                        android:text="English, Hindi"
+                        android:textColor="@color/primary_text_color"
+                        android:textColorHint="@color/divider_color"
+                        android:textSize="14sp"
+                        app:edittextfont="ROBOTO-REGULAR.TTF"
+                        app:edittextfontHint="ROBOTO-REGULAR.TTF" />
+
+                    <Spinner
+                        android:id="@+id/spinner_country"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="30dp"
+                        android:layout_marginTop="20dp"
+                        android:background="@drawable/spinner_bg_gray"
+                        android:spinnerMode="dialog" />
+
+                    <Spinner
+                        android:id="@+id/spinner_city"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="30dp"
+                        android:layout_marginTop="20dp"
+                        android:background="@drawable/spinner_bg_gray"
+                        android:spinnerMode="dialog"
+                        android:visibility="gone" />
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+    <com.ebabu.tooreest.customview.CustomTextView
+        android:id="@+id/btn_edit_profile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center_horizontal"
+        android:background="@color/accentColor"
+        android:clickable="true"
+        android:focusable="true"
+        android:foreground="?attr/selectableItemBackground"
+        android:gravity="center"
+        android:paddingBottom="12dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:paddingTop="12dp"
+        android:text="@string/edit_profile"
+        android:textColor="#FFFFFF"
+        android:textSize="15sp"
+        app:edittextfont="ROBOTO-REGULAR.TTF" />
+</LinearLayout>

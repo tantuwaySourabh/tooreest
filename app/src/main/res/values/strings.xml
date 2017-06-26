@@ -1,0 +1,316 @@
+<resources>
+    <string name="app_name">Tooreest Guide</string>
+
+    <string name="terms_n_conditions"><u>Terms &amp; Conditions</u></string>
+    <string name="default_media_location_folder">@string/app_name</string>
+    <string name="map_key_mohit">AIzaSyAGTm6wY_n6r8Xf_YKcUxbi1auyq_hVem4</string>
+    <string-array name="array_categories">
+        <item>Category</item>
+        <item>Business</item>
+        <item>Events &amp; Weddings</item>
+        <item>Personal Services</item>
+        <item>Health &amp; Wellness</item>
+        <item>Home Services</item>
+        <item>Lessons</item>
+        <item>Hobbies &amp; Interest</item>
+        <item>Beauty</item>
+        <item>Repair &amp; Maintenance</item>
+    </string-array>
+
+    <string-array name="array_city">
+        <item>Your City</item>
+        <item>Raipur</item>
+        <item>Indore</item>
+    </string-array>
+
+    <string-array name="array_language">
+        <item>Expertise Language</item>
+        <item>English</item>
+        <item>Chinese</item>
+        <item>Thai</item>
+        <item>Khalkha Mongol</item>
+    </string-array>
+
+    <string-array name="array_country">
+        <item>Country</item>
+        <item>India</item>
+    </string-array>
+
+
+    <string name="we_have_sent_an_sms">We are texting you an OTP on your\nmobile number</string>
+
+    <string name="my_profile_small">My Profile</string>
+    <string name="my_profile">MY PROFILE</string>
+    <string name="about">About</string>
+    <string name="book_now">Book Now</string>
+    <string name="bookings">BOOKINGS</string>
+    <string name="invoice">INVOICE</string>
+    <string name="transactions">Transactions</string>
+    <string name="wallet">Wallet</string>
+    <string name="payment">Payment Mode</string>
+    <string name="my_favorites">MY FAVORITES</string>
+    <string name="my_services">MY SERVICES</string>
+    <string name="post_a_job">POST A JOB</string>
+    <string name="my_bids">MY BIDS</string>
+    <string name="invite_for_job">INVITE FOR JOB</string>
+    <string name="my_jobs">MY JOBS</string>
+    <string name="provider_offer">Offers</string>
+    <string name="write_reviews">Write Reviews</string>
+    <string name="documents">Documents</string>
+    <string name="settings">SETTINGS</string>
+    <string name="privacy_policy">PRIVACY POLICY</string>
+    <string name="terms_n_conditions_1">TERMS &amp; CONDITIONS</string>
+    <string name="contact">CONTACT</string>
+    <string name="logout">LOGOUT</string>
+    <string name="does_require_local_provider">Does your project require a local provider?</string>
+    <string name="set_urgent_work">Do you want to set your work as urgent?</string>
+    <string name="budget_in_mind">What budget do you have in mind?</string>
+    <string name="describe_your_work">Describe your service</string>
+    <string name="service_type">Service Type</string>
+    <string name="notes_on_adding_service"><b>Notes:-</b>\n1. For physical service, you can enter price according to you. We will charge 30% extra of your service charge as Tooreest fees.\n2. For virtual service, there is a fix charge of 10 USD. You will get 7 USD and 3 USD is the Tooreest fees.</string>
+    <string name="upload_file_message">Upload any image that might be helpful in explaining your service.</string>
+    <string name="upload_image_message">Upload any image that might be helpful in explaining your this service.</string>
+    <string name="upload_files">Upload Image</string>
+    <string name="upload_doc">Upload Document\'s Image</string>
+    <string name="upload_image">Upload Image</string>
+    <string name="network_error">Check your internet connection</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="my_account">My Account</string>
+    <string name="notifications">Notifications</string>
+    <string name="chat_notifications">Chat Notifications</string>
+    <string name="other_notifications">Other Notifications</string>
+    <string name="about_n_help">About &amp; Help</string>
+    <string name="help">Help &amp; Support</string>
+    <string name="Logout">Logout</string>
+    <string name="add_on_services">Add-On Services</string>
+    <string name="phone">Phone</string>
+    <string name="email">Email</string>
+    <string name="address">Address</string>
+    <string name="id_verified">ID Verified</string>
+    <string name="bank_verified">Bank Verified</string>
+    <string name="id_not_verified">ID Not Verified</string>
+    <string name="bank_not_verified">Bank Not Verified</string>
+    <string name="gallery">Gallery</string>
+    <string name="contact_1">Contact</string>
+    <string name="add_money">Add Money</string>
+    <string name="url_not_found">No web URL found</string>
+    <string name="cancel">Cancel</string>
+    <string name="about_me">About Me</string>
+    <string name="about_me_text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text of the printing and typesetting industry.</string>
+    <string name="my_skills">My Skills</string>
+    <string name="select_subcategories">Select Category</string>
+    <string name="my_services_1">My Services</string>
+    <string name="offers">Offers</string>
+    <string name="offer_title">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</string>
+    <string name="offer_valid_till">Valid till 5 March</string>
+    <string name="my_document">My Documents</string>
+    <string name="my_gallery">My Gallery</string>
+    <string name="quote_requests">Quote Requests</string>
+    <string name="review_n_feedback">Review &amp; Feedback</string>
+    <string name="review_text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text of the printing and typesetting industry.</string>
+    <string name="request_for_quote">Request for quote</string>
+    <string name="no_of_project">No. of projects</string>
+    <string name="charges">Charges</string>
+    <string name="service_charge_in_usd">Service Charge (in USD)</string>
+    <string name="recommended">Recommended</string>
+    <string name="rating">Rating</string>
+    <string name="change_password">Change Password</string>
+    <string name="enter_current_password">Enter current password</string>
+    <string name="enter_new_password">Enter new password</string>
+    <string name="confirm_new_password">Confirm new password</string>
+    <string name="new_old_password_are_same">New password is same as old password</string>
+    <string name="place_bid">Place Bid</string>
+    <string name="budget">Budget: </string>
+    <string name="bid_amount">Bid Amount: </string>
+    <string name="place_bid_budget">Place Bid (Budget $ %s)</string>
+    <string name="incorrect_password">Incorrect current password</string>
+    <string name="confirm_password_is_different">Confirm password is not same as new password</string>
+    <string name="job_category">Job Category</string>
+    <string name="payment_offer">Payment Offer</string>
+    <string name="location">Location</string>
+    <string name="skills_required">Skills Required</string>
+    <string name="posted_date">Posted Date</string>
+    <string name="add_new_service">Add New Service</string>
+    <string name="enter_bid_amount">Enter Bid Amount</string>
+    <string name="hire">Hire</string>
+    <string name="view_provider_profile">View Provider Profile</string>
+    <string name="provider_profile">Provider Profile</string>
+    <string name="view_uploaded_files">View Uploaded Files</string>
+    <string name="complete_job">Complete Job</string>
+    <string name="chat">Chat</string>
+    <string name="user_profile">Profile</string>
+    <string name="date">Date</string>
+    <string name="time">Time</string>
+    <string name="reschedule">Reschedule</string>
+    <string name="review_and_feedback">Review &amp; Feedback</string>
+    <string name="review_message">Tell us your experience with this service and help us &amp; other customers to find the best service.</string>
+    <string name="write_your_review">Write your review...</string>
+    <string name="write_about_you">Write About you</string>
+    <string name="submit">SUBMIT</string>
+    <string name="booking_amnt">Booking Amount ($)</string>
+    <string name="minimum_booking_amnt">Minimum booking amount is ($) 100</string>
+    <string name="you_are_paying_greater">You\'re paying greater than total amount</string>
+    <string name="enter_amount">Enter Amount</string>
+    <string name="cannot_repeat_booking">This booking cannot be repeated since you have cancelled it. Only completed bookings can be repeated if you\'re unsatisfied with services. Contact on support for more help or any query.</string>
+    <!--payment mode activity-->
+    <string name="payment_mode">Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text of the printing and typesetting industry. </string>
+    <!--wallet provider-->
+    <string name="wallet_amount">&#8377; 500</string>
+    <string name="withdraw_condition">Only amount above $ 350 can be withdrawn</string>
+    <string name="update">Update</string>
+    <string name="user_name">Sahitya Jain</string>
+    <string name="user_email">hackybornon9@gmail.com</string>
+    <string name="user_contact">8982223573</string>
+    <string name="registering_user">Signing Up</string>
+    <string name="verifying_otp">Verifying OTP</string>
+    <string name="please_wait">Please wait</string>
+    <string name="what_are_skills_required">What are the skills required?</string>
+
+    <string name="enter_company_name">Enter your company\'s name</string>
+    <string name="enter_a_valid_company">Enter a valid company name</string>
+    <string name="enter_name">Enter your name</string>
+    <string name="enter_a_valid_name">Enter a valid name</string>
+    <string name="enter_email">Enter your email</string>
+    <string name="enter_bidding_amount">Enter bidding amount</string>
+    <string name="maximum_bidding_amount_is_n">Maximum budget is $ %s</string>
+    <string name="enter_a_valid_email">Enter a valid email</string>
+    <string name="enter_mobile_number">Enter mobile number</string>
+    <string name="mobile_number_must_be_n_digits">Mobile number length must be %d digits</string>
+    <string name="enter_password">Enter password</string>
+    <string name="password_length_at_least_n_digits">Password length should be at least %d characters</string>
+    <string name="unexpected_error">An unexpected error occurred, please try again.</string>
+    <string name="accept_terms_conditions">Accept Terms &amp; Conditions to register</string>
+    <string name="pincode_must_be_n_digits">Pincode length must be %d digits</string>
+    <string name="enter_address">Enter address</string>
+    <string name="enter_pincode">Enter pincode</string>
+    <string name="add_category">Add at least one category</string>
+    <string name="service_charge">Service Charge</string>
+    <string name="select_guide_type">Select \"join as\"</string>
+    <string name="write_something_abt_u">Write something about you...</string>
+    <string name="max_160_characters">(Max 160 characters)</string>
+    <string name="min_50_characters">(Min 50 characters)</string>
+    <string name="edit_profile">Edit Profile</string>
+    <string name="update_profile">UPDATE PROFILE</string>
+    <string name="about_me_updated">About Me updated successfully</string>
+    <string name="service_already_added">This service is already added</string>
+    <string name="enter_service_charge">Enter service charge</string>
+    <string name="min_service_charge_is_n">Minimum service charge is $ %d</string>
+    <string name="title">Title</string>
+    <string name="description">Description</string>
+    <string name="amount">Amount</string>
+    <string name="start_date">Start Date</string>
+    <string name="end_date">End Date</string>
+    <string name="add_offer">Add New Offer</string>
+    <string name="urgent_job">This is an urgent job.</string>
+    <string name="enter_title">Enter Title</string>
+    <string name="enter_description">Enter Description</string>
+    <string name="min_description_length_is_n">Enter description at least %d characters long</string>
+    <string name="select_start_date">Select offer start date</string>
+    <string name="select_end_date">Enter offer end date</string>
+    <string name="start_date_is_lower">Start date cannot be greater than end date</string>
+    <string name="enter_your_budget">Enter your budget</string>
+    <string name="change_file">Change Image</string>
+    <string name="minimum_budget_is_100">Minimum budget is $ 100</string>
+    <string name="enter_valid_description">Enter valid description</string>
+    <string name="min_n_characters_needed">Minimum %d characters needed</string>
+    <string name="upload_doc1">Upload Document</string>
+    <string name="service_tax">Convenience Fee (14%)</string>
+    <string name="offer_discount">Offer Discount</string>
+    <string name="total_amount">Total Payable Amount</string>
+    <string name="subtotal_of_service">Subtotal (Including tax)</string>
+    <string name="pay_now">Pay Now ($ %d)</string>
+    <string name="you_dont_have_sufficient_amount">You don\'t have sufficient amount in your wallet. Click on \"Add Money\" button to add money and book service.</string>
+    <string name="service_name">Service: %s</string>
+    <string name="date_value">Date: %s</string>
+    <string name="booking_num_X">Booking #%s</string>
+    <string name="start_job">Start Job</string>
+    <string name="confirmation">Confirmation</string>
+    <string name="cancel_booking_warning">You will be charged for cancelling this booking and rest amount will be added in your wallet. Are you sure you want to cancel this order?</string>
+    <string name="booked_on">Booked On</string>
+    <string name="updates_sent_to">Updates sent to</string>
+    <string name="charges_details">Charges Details</string>
+    <string name="payment_details">Payment Details</string>
+    <string name="amount_paid">Amount Paid</string>
+    <string name="amount_remaining">Remaining Amount</string>
+    <string name="booking_details">Booking Details</string>
+    <string name="reason_to_repeat">Reason to repeat</string>
+    <string name="describe_in_n_chars">Describe in minimum %d characters</string>
+    <string name="want_to_complete_job">Are you sure you want to complete this job?</string>
+    <string name="add_to_favorites">Add to Favorites</string>
+    <string name="remove_from_favorites">Remove from Favorites</string>
+    <string name="upload_bank_title">Upload Passbook Image</string>
+    <string name="upload_bank_description">Upload a photo of front page of your passbook which shows clear detail of your bank account</string>
+    <string name="upload_id_title">Upload Government ID</string>
+    <string name="upload_id_description">Upload a photo of any government authorised ID proof i.e. Passport, Adhar Card, Voter ID etc.</string>
+    <string name="bank_passbook">Bank Passbook</string>
+    <string name="id_proof">Government ID</string>
+    <string name="facebook_link">Facebook Link</string>
+    <string name="gplus_link">Google+ Link</string>
+    <string name="linkedin_link">Linked-In Link</string>
+    <string name="twitter_link">Twitter Link</string>
+    <string name="title_activity_change_password">ChangePasswordActivity</string>
+    <string name="view_all">View All</string>
+    <string name="featured_providers">FEATURED PROVIDERS</string>
+    <string name="order_id_n">(Order #%s)</string>
+    <string name="transaction_id_n">Transaction #%s</string>
+    <string name="jokaamo_address">
+        MIG 32, MAHAVIR NAGAR, Behind Mining Office, Near Jagannath Enclave, Raipur (CG) 492006
+    </string>
+    <string name="select_city">Select City</string>
+    <string name="select_country">Select Country</string>
+    <string name="select_language">Select Language</string>
+    <string name="withdraw">Withdraw</string>
+    <string name="your_balance">Your Balance</string>
+    <string name="money_added_successfully">Money added successfully in wallet</string>
+    <string name="problem_in_payment_gateway">There is some problem in payment gateway. Please try again.</string>
+    <string name="withdraw_request_success">Withdraw request has been generated. It may take 48 hrs to transfer money in your account.</string>
+    <string name="guide_someone_for_extra_income">Guide someone to make extra income</string>
+    <string name="total_earning">Total Earning</string>
+    <string name="weekly_earning">Weekly Earning</string>
+    <string name="view_details">View Details</string>
+    <string name="add_documents">Add Document</string>
+    <string name="add_bank_statement">Add Bank Statement or Passbook</string>
+    <string name="add_goverment_id">Add Government ID</string>
+    <string name="id_proof_1">ID Proof</string>
+    <string name="government_id_like">Government ID (National ID, Passport etc.)</string>
+    <string name="address_proof">Address Proof</string>
+    <string name="bank_details">Bank Details</string>
+    <string name="bank_name">Bank Name</string>
+    <string name="enter_paypal_id">Enter PayPal Email ID</string>
+    <string name="account_number">Account No.</string>
+    <string name="ifsc_code">IFSC Code</string>
+    <string name="swift_bic_code">SWIFT/BIC Code(AAAABBCCDDD)</string>
+    <string name="bank_branch_code">Bank/Branch Code</string>
+    <string name="are_you_licensed_guide">Are you a licensed guide?</string>
+    <string name="do_you_have_paypal_account">Do you have PayPal account?</string>
+    <string name="having_paypal_account_beneficial">(Having PayPal account is beneficial as you will get payment immediately after completing job, otherwise you will get your payment in bank after at least two days.)</string>
+    <string name="certificate">Certificate</string>
+    <string name="license_number">License number</string>
+    <string name="type_here">Type here</string>
+
+    <string name="upload_id_proof">Upload ID proof</string>
+    <string name="upload_address_proof">Upload address proof</string>
+    <string name="upload_bank_statement_or_passbook">Upload bank statement or passbook</string>
+    <string name="enter_bank_name">Enter bank name</string>
+    <string name="enter_a_valid_bank_name">Enter a valid bank name</string>
+    <string name="enter_account_number">Enter account number</string>
+    <string name="enter_valid_account_number">Enter a valid account number</string>
+    <string name="enter_ifsc_code">Enter SWIFT/BIC code</string>
+    <string name="enter_branch_code">Enter branch code</string>
+    <string name="invalid_branch_code">Branch code must be of %d digits</string>
+    <string name="invalid_bic_code">SWIFT/BIC code Format must be \"AAAABBCCDDD\" where,\n\n1. AAAA - Bank Code(4 letter code. It usually looks like a shortened version of that bank\'s name.)\n2. BB - Country Code(2 letter code. It says which country that bank is in.)\n3. CC - Location code(2 digit location code that could be either 2 letters or numbers. It says where that bank\'s head office is.)\n4. DDD - Branch Code(Optional 3 digit code. It specifies a particular branch, instead of the bank\'s head).</string>
+    <string name="enter_a_valid_ifsc_code">Enter a valid IFSC code</string>
+    <string name="upload_certificate">Upload certificate</string>
+    <string name="enter_license_number">Enter license number</string>
+    <string name="documents_updated_successfully">Documents updated successfully</string>
+    <string name="availability">Availability</string>
+    <string name="legal_v1">Legal v1.0</string>
+    <string name="languages_hint">Languages you can speak(e.g. English, Hindi)</string>
+    <string name="enter_languages">Enter languages</string>
+    <string name="title_activity_total_earning">TotalEarningActivity</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_weekly_earning">WeeklyEarningActivity</string>
+</resources>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.ebabu.tooreest.customview.CustomEditText
+        android:id="@+id/et_booking_code"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/bottom_line_gray"
+        android:gravity="center"
+        android:hint="Enter Booking Code"
+        android:inputType="textCapCharacters"
+        android:maxLength="6"
+        android:paddingBottom="5dp"
+        android:paddingRight="10dp"
+        android:paddingTop="5dp"
+        android:textColor="@color/yellow"
+        android:textColorHint="@color/divider_color"
+        android:textSize="18sp"
+        app:edittextfont="ROBOTO-MEDIUM.TTF"
+        app:edittextfontHint="ROBOTO-REGULAR.TTF" />
+
+    <com.ebabu.tooreest.customview.CustomTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        android:text="(Booking code is the code which you will get from the customer while completing this booking. This code is useful to validate if the guide is completing this booking with the confirmation of customer)"
+        android:textColor="@color/primary_text_color"
+        android:textSize="12sp"
+        app:edittextfont="ROBOTO-REGULAR.TTF"
+        app:edittextfontHint="ROBOTO-REGULAR.TTF" />
+
+    <com.ebabu.tooreest.customview.CustomTextView
+        android:id="@+id/btn_complete_job"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="35dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/green_rounded_solid_bg"
+        android:clickable="true"
+        android:focusable="true"
+        android:foreground="?attr/selectableItemBackground"
+        android:gravity="center"
+        android:paddingBottom="5dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="5dp"
+        android:singleLine="true"
+        android:text="Complete Job"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        app:edittextfont="ROBOTO-REGULAR.TTF"
+        app:edittextfontHint="ROBOTO-REGULAR.TTF" />
+</LinearLayout>
+

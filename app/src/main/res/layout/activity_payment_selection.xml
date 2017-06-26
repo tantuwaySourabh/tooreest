@@ -1,0 +1,75 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f4f4f4"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_toolbar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingTop="50dp">
+
+            <com.ebabu.tooreest.customview.CustomTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:gravity="center"
+                android:text="PAYMENT MODE"
+                android:textColor="@color/primary_text_color"
+                android:textSize="18sp"
+                app:edittextfont="ROBOTO-LIGHT.TTF"
+                app:edittextfontHint="ROBOTO-LIGHT.TTF" />
+
+            <com.ebabu.tooreest.customview.CustomTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:text="@string/payment_mode"
+                android:textColor="@color/transparent_black_color"
+                android:textSize="12sp"
+                app:edittextfont="ROBOTO-LIGHT.TTF"
+                app:edittextfontHint="ROBOTO-LIGHT.TTF" />
+
+            <com.ebabu.tooreest.customview.CustomTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                android:layout_marginTop="60dp"
+                android:background="@drawable/yellow_rounded_solid_bg"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="Jokaamo Wallet"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                app:edittextfont="ROBOTO-LIGHT.TTF"
+                app:edittextfontHint="ROBOTO-LIGHT.TTF" />
+
+            <com.ebabu.tooreest.customview.CustomTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/black_rounded_corner_bg"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="Payment Gateway"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                app:edittextfont="ROBOTO-LIGHT.TTF"
+                app:edittextfontHint="ROBOTO-LIGHT.TTF" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#FFFFFF"
+    android:gravity="center"
+    android:orientation="vertical">
+
+
+    <com.ebabu.tooreest.customview.CustomTextView
+        android:id="@+id/tv_heading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_margin="20dp"
+        android:text="@string/review_message"
+        android:textColor="@color/primary_text_color"
+        android:textSize="16sp"
+        app:edittextfont="ROBOTO-REGULAR.TTF"
+        app:edittextfontHint="ROBOTO-REGULAR.TTF" />
+
+
+    <RatingBar
+        android:id="@+id/ratingbar_default"
+        style="?android:attr/ratingBarStyleIndicator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:isIndicator="false"
+        android:rating="5"
+        android:stepSize="1" />
+
+    <com.ebabu.tooreest.customview.CustomTextView
+        android:id="@+id/tv_rating_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:gravity="center"
+        android:text="Awesome"
+        android:textColor="@color/drawer_divider_color"
+        android:textSize="16sp"
+        app:edittextfont="ROBOTO-BOLD.TTF"
+        app:edittextfontHint="ROBOTO-BOLD.TTF"/>
+
+    <com.ebabu.tooreest.customview.CustomEditText
+        android:id="@+id/et_feedback"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_gravity="top"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/gray_rounded_corner_bg"
+        android:gravity="top|left"
+        app:edittextfont="ROBOTO-REGULAR.TTF"
+        app:edittextfontHint="ROBOTO-REGULAR.TTF"
+        android:hint="@string/write_your_review"
+        android:inputType="textMultiLine|textCapSentences"
+        android:imeOptions="actionDone"
+        android:padding="5dp"
+        android:scrollbars="vertical"
+        android:textColor="@color/primary_text_color"
+        android:textColorHint="@color/gray"
+        android:textSize="16sp" />
+
+    <com.ebabu.tooreest.customview.CustomTextView
+        android:id="@+id/btn_submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/yellow_rounded_solid_bg"
+        android:clickable="true"
+        android:focusable="true"
+        android:foreground="?attr/selectableItemBackground"
+        android:gravity="center"
+        android:paddingBottom="7dp"
+        android:paddingLeft="50dp"
+        android:paddingRight="50dp"
+        app:edittextfont="ROBOTO-REGULAR.TTF"
+        app:edittextfontHint="ROBOTO-REGULAR.TTF"
+        android:paddingTop="7dp"
+        android:text="@string/submit"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp" />
+</LinearLayout>

@@ -1,0 +1,413 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#e6e6e6"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_toolbar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/primaryColor"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="5dp">
+
+                <com.ebabu.tooreest.customview.CustomTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Booked for"
+                    android:textColor="@color/white"
+                    android:textSize="12sp"
+                    app:edittextfont="ROBOTO-LIGHT.TTF"
+                    app:edittextfontHint="ROBOTO-LIGHT.TTF" />
+
+                <com.ebabu.tooreest.customview.CustomTextView
+                    android:id="@+id/tv_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="12 Dec, 2017 11:45 AM"
+                    android:textColor="@color/white"
+                    android:textSize="15sp"
+                    app:edittextfont="ROBOTO-LIGHT.TTF"
+                    app:edittextfontHint="ROBOTO-LIGHT.TTF" />
+            </LinearLayout>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardBackgroundColor="@color/white"
+                card_view:cardElevation="2dp">
+
+
+            </android.support.v7.widget.CardView>
+
+            <com.ebabu.tooreest.customview.CustomTextView
+                android:id="@+id/tv_booking_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:text="Booking No. 1"
+                android:textColor="@color/secondary_text_color"
+                android:textSize="14sp"
+                app:edittextfont="ROBOTO-REGULAR.TTF"
+                app:edittextfontHint="ROBOTO-REGULAR.TTF" />
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="1dp"
+                app:cardBackgroundColor="@color/white"
+                app:cardCornerRadius="5dp"
+                card_view:cardElevation="2dp">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp">
+
+                    <ImageView
+                        android:id="@+id/iv_image"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scaleType="centerCrop"
+                        android:src="@mipmap/default_icon" />
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@color/transparent_black_color" />
+
+                    <com.ebabu.tooreest.customview.CustomTextView
+                        android:id="@+id/tv_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="10dp"
+                        android:text="Chandu Paratha Centre"
+                        android:textColor="@color/white"
+                        android:textSize="15sp"
+                        app:edittextfont="ROBOTO-REGULAR.TTF"
+                        app:edittextfontHint="ROBOTO-REGULAR.TTF" />
+
+                    <com.ebabu.tooreest.customview.CustomTextView
+                        android:id="@+id/tv_status"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="Booked"
+                        android:textColor="@color/white"
+                        android:textSize="25sp"
+                        app:edittextfont="ROBOTO-LIGHT.TTF"
+                        app:edittextfontHint="ROBOTO-LIGHT.TTF" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:layout_marginBottom="10dp"
+                        android:orientation="vertical">
+
+
+                        <com.ebabu.tooreest.customview.CustomTextView
+                            android:id="@+id/tv_service"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="bottom"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:text="Service: House Painter"
+                            android:textColor="@color/white"
+                            android:textSize="13sp"
+                            app:edittextfont="ROBOTO-REGULAR.TTF"
+                            app:edittextfontHint="ROBOTO-REGULAR.TTF" />
+
+                        <com.ebabu.tooreest.customview.CustomTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="bottom"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:text="Charges: \u20b9 2500"
+                            android:textColor="@color/white"
+                            android:textSize="13sp"
+                            android:visibility="gone"
+                            app:edittextfont="ROBOTO-REGULAR.TTF"
+                            app:edittextfontHint="ROBOTO-REGULAR.TTF" />
+                    </LinearLayout>
+                </FrameLayout>
+
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                app:cardBackgroundColor="@color/white"
+                app:cardCornerRadius="5dp"
+                card_view:cardElevation="2dp">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+
+                    <com.ebabu.tooreest.customview.CustomTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Service Description"
+                        android:textColor="@color/primary_text_color"
+                        android:textSize="14sp"
+                        app:edittextfont="ROBOTO-LIGHT.TTF"
+                        app:edittextfontHint="ROBOTO-LIGHT.TTF" />
+
+
+                    <com.ebabu.tooreest.customview.CustomTextView
+                        android:id="@+id/tv_description"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:text="This is the service description"
+                        android:textColor="@color/primary_text_color"
+                        android:textSize="14sp"
+                        app:edittextfont="ROBOTO-REGULAR.TTF"
+                        app:edittextfontHint="ROBOTO-REGULAR.TTF" />
+
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                app:cardBackgroundColor="@color/white"
+                app:cardCornerRadius="5dp"
+                card_view:cardElevation="2dp">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+
+                    <com.ebabu.tooreest.customview.CustomTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Service Type"
+                        android:textColor="@color/primary_text_color"
+                        android:textSize="14sp"
+                        app:edittextfont="ROBOTO-LIGHT.TTF"
+                        app:edittextfontHint="ROBOTO-LIGHT.TTF" />
+
+
+                    <com.ebabu.tooreest.customview.CustomTextView
+                        android:id="@+id/tv_service_type"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:text="Physical"
+                        android:textColor="@color/primary_text_color"
+                        android:textSize="14sp"
+                        app:edittextfont="ROBOTO-REGULAR.TTF"
+                        app:edittextfontHint="ROBOTO-REGULAR.TTF" />
+
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                app:cardBackgroundColor="@color/white"
+                app:cardCornerRadius="5dp"
+                card_view:cardElevation="2dp">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+
+                    <com.ebabu.tooreest.customview.CustomTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Charges"
+                        android:textColor="@color/primary_text_color"
+                        android:textSize="14sp"
+                        app:edittextfont="ROBOTO-LIGHT.TTF"
+                        app:edittextfontHint="ROBOTO-LIGHT.TTF" />
+
+                    <com.ebabu.tooreest.customview.CustomTextView
+                        android:id="@+id/tv_charges"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:text="230 USD"
+                        android:textColor="@color/primary_text_color"
+                        android:textSize="14sp"
+                        app:edittextfont="ROBOTO-REGULAR.TTF"
+                        app:edittextfontHint="ROBOTO-REGULAR.TTF" />
+
+                    <com.ebabu.tooreest.customview.CustomTextView
+                        android:id="@+id/tv_discount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp"
+                        android:drawableLeft="@mipmap/discount"
+                        android:drawablePadding="10dp"
+                        android:gravity="center_vertical"
+                        android:text="You got $30 discount by applying coupon ACBGFR"
+                        android:textColor="@color/parrot_green"
+                        android:textSize="12sp"
+                        android:visibility="gone"
+                        app:edittextfont="ROBOTO-REGULAR.TTF"
+                        app:edittextfontHint="ROBOTO-REGULAR.TTF" />
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                app:cardBackgroundColor="@color/white"
+                app:cardCornerRadius="5dp"
+                card_view:cardElevation="2dp">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:id="@+id/iv_profile_pic"
+                            android:layout_width="35dp"
+                            android:layout_height="35dp"
+                            android:background="@drawable/red_circle"
+                            android:padding="1px"
+                            android:src="@mipmap/profile" />
+
+                        <com.ebabu.tooreest.customview.CustomTextView
+                            android:id="@+id/tv_user_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:text="230 USD"
+                            android:textColor="@color/primary_text_color"
+                            android:textSize="14sp"
+                            app:edittextfont="ROBOTO-REGULAR.TTF"
+                            app:edittextfontHint="ROBOTO-REGULAR.TTF" />
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/layout_contact_details"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+                        <com.ebabu.tooreest.customview.CustomTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:text="Contact Details"
+                            android:textColor="@color/primary_text_color"
+                            android:textSize="14sp"
+                            app:edittextfont="ROBOTO-LIGHT.TTF"
+                            app:edittextfontHint="ROBOTO-LIGHT.TTF" />
+
+                        <com.ebabu.tooreest.customview.CustomTextView
+                            android:id="@+id/tv_email"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:autoLink="email"
+                            android:text="mohit@gmail.com"
+                            android:textColor="@color/primary_text_color"
+                            android:textSize="14sp"
+                            app:edittextfont="ROBOTO-REGULAR.TTF"
+                            app:edittextfontHint="ROBOTO-REGULAR.TTF" />
+
+                        <com.ebabu.tooreest.customview.CustomTextView
+                            android:id="@+id/tv_phone_num"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:autoLink="phone"
+                            android:text="+6587647578"
+                            android:textColor="@color/primary_text_color"
+                            android:textSize="14sp"
+                            app:edittextfont="ROBOTO-REGULAR.TTF"
+                            app:edittextfontHint="ROBOTO-REGULAR.TTF" />
+
+                    </LinearLayout>
+
+                    <com.ebabu.tooreest.customview.CustomTextView
+                        android:id="@+id/btn_chat"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom|center_horizontal"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/yellow_rounded_solid_bg"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:foreground="?attr/selectableItemBackground"
+                        android:gravity="center"
+                        android:paddingBottom="12dp"
+                        android:paddingLeft="15dp"
+                        android:paddingRight="15dp"
+                        android:paddingTop="12dp"
+                        android:text="CHAT"
+                        android:textColor="#FFFFFF"
+                        android:textSize="15sp"
+                        android:visibility="gone"
+                        app:edittextfont="ROBOTO-REGULAR.TTF" />
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

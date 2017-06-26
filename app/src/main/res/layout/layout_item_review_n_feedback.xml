@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="5dp"
+    android:layout_marginBottom="5dp"
+    card_view:cardCornerRadius="0dp"
+    card_view:cardElevation="2dp">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:orientation="horizontal"
+            android:paddingTop="8dp">
+
+            <com.ebabu.tooreest.customview.CustomTextView
+                android:id="@+id/tv_rating"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/yellow_rounded_solid_bg"
+                android:drawablePadding="5dp"
+                android:drawableRight="@mipmap/start"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:paddingTop="2dp"
+                android:paddingBottom="2dp"
+                android:text="5.0"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                app:edittextfont="ROBOTO-MEDIUM.TTF" />
+
+            <com.ebabu.tooreest.customview.CustomTextView
+                android:id="@+id/tv_username"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:text="Sahitya Jain"
+                android:textColor="@color/primary_text_color"
+                android:textSize="14sp"
+                app:edittextfont="ROBOTO-MEDIUM.TTF" />
+        </LinearLayout>
+
+        <com.ebabu.tooreest.customview.CustomTextView
+            android:id="@+id/tv_review"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="10dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="5dp"
+            android:text="@string/review_text"
+            android:textColor="@color/primary_text_color"
+            android:textSize="12sp"
+            app:edittextfont="ROBOTO-LIGHT.TTF" />
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>

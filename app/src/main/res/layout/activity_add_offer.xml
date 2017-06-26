@@ -1,0 +1,162 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_toolbar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:orientation="vertical">
+
+
+        <com.ebabu.tooreest.customview.CustomEditText
+            android:id="@+id/et_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/bottom_line_gray"
+            android:drawablePadding="10dp"
+            android:hint="@string/title"
+            android:inputType="textCapSentences"
+            android:maxLength="30"
+            android:paddingBottom="10dp"
+            android:paddingRight="10dp"
+            android:textColor="@color/primary_text_color"
+            android:textColorHint="@color/divider_color"
+            android:textSize="16sp"
+            app:edittextfont="ROBOTO-REGULAR.TTF"
+            app:edittextfontHint="ROBOTO-REGULAR.TTF" />
+
+        <com.ebabu.tooreest.customview.CustomEditText
+            android:id="@+id/et_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/bottom_line_gray"
+            android:drawablePadding="10dp"
+            android:hint="@string/description"
+            android:inputType="textCapSentences"
+            android:maxLength="100"
+            android:paddingBottom="10dp"
+            android:paddingRight="10dp"
+            android:textColor="@color/primary_text_color"
+            android:textColorHint="@color/divider_color"
+            android:textSize="16sp"
+            app:edittextfont="ROBOTO-REGULAR.TTF"
+            app:edittextfontHint="ROBOTO-REGULAR.TTF" />
+
+        <com.ebabu.tooreest.customview.CustomEditText
+            android:id="@+id/et_amount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/bottom_line_gray"
+            android:drawablePadding="10dp"
+            android:hint="@string/amount"
+            android:inputType="number"
+            android:maxLength="5"
+            android:paddingBottom="10dp"
+            android:paddingRight="10dp"
+            android:textColor="@color/primary_text_color"
+            android:textColorHint="@color/divider_color"
+            android:textSize="16sp"
+            app:edittextfont="ROBOTO-REGULAR.TTF"
+            app:edittextfontHint="ROBOTO-REGULAR.TTF" />
+
+        <LinearLayout
+            android:id="@+id/btn_start_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/bottom_line_gray"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <com.ebabu.tooreest.customview.CustomTextView
+                android:id="@+id/tv_start_date"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="@string/start_date"
+                android:inputType="textCapSentences"
+                android:maxLength="100"
+                android:paddingBottom="10dp"
+                android:paddingRight="10dp"
+                android:textColor="@color/primary_text_color"
+                android:textColorHint="@color/divider_color"
+                android:textSize="16sp"
+                app:edittextfont="ROBOTO-REGULAR.TTF"
+                app:edittextfontHint="ROBOTO-REGULAR.TTF" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:padding="5dp"
+                android:src="@mipmap/calender" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/btn_end_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/bottom_line_gray"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <com.ebabu.tooreest.customview.CustomTextView
+                android:id="@+id/tv_end_date"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="@string/end_date"
+                android:inputType="textCapSentences"
+                android:maxLength="100"
+                android:paddingBottom="10dp"
+                android:paddingRight="10dp"
+                android:textColor="@color/primary_text_color"
+                android:textColorHint="@color/divider_color"
+                android:textSize="16sp"
+                app:edittextfont="ROBOTO-REGULAR.TTF"
+                app:edittextfontHint="ROBOTO-REGULAR.TTF" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:padding="5dp"
+                android:src="@mipmap/calender" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <com.ebabu.tooreest.customview.CustomTextView
+            android:id="@+id/btn_save"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center_horizontal"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/yellow_rounded_solid_bg"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="?attr/selectableItemBackground"
+            android:gravity="center"
+            android:paddingBottom="12dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:paddingTop="12dp"
+            android:text="SAVE"
+            android:textColor="#FFFFFF"
+            android:textSize="15sp"
+            app:edittextfont="ROBOTO-REGULAR.TTF" />
+    </LinearLayout>
+</LinearLayout>

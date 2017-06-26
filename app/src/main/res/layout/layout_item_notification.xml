@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dp"
+    card_view:cardElevation="2dp">
+
+    <LinearLayout
+        android:id="@+id/layout_main_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <LinearLayout
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:orientation="vertical">
+
+
+                <ImageView
+                    android:id="@+id/iv_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/gray_square"
+                    android:padding="1dp"
+                    android:scaleType="fitCenter"
+                    android:src="@mipmap/ic_launcher" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+
+                    <com.ebabu.tooreest.customview.CustomTextView
+                        android:id="@+id/tv_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Download the latest version"
+                        android:textColor="@color/primary_text_color"
+                        android:textSize="16sp"
+                        app:edittextfont="ROBOTO-REGULAR.TTF"
+                        app:edittextfontHint="ROBOTO-REGULAR.TTF" />
+
+                    <com.ebabu.tooreest.customview.CustomTextView
+                        android:id="@+id/tv_message"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp"
+                        android:text="v1.5 is available with some new features and bug fixes. Download from GooglePlay"
+                        android:textColor="@color/secondary_text_color"
+                        android:textSize="12sp"
+                        app:edittextfont="ROBOTO-LIGHT.TTF"
+                        app:edittextfontHint="ROBOTO-LIGHT.TTF" />
+
+                    <com.ebabu.tooreest.customview.CustomTextView
+                        android:id="@+id/btn_view_profile"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:foreground="?attr/selectableItemBackground"
+                        android:paddingBottom="5dp"
+                        android:paddingTop="5dp"
+                        android:text="@string/view_provider_profile"
+                        android:textColor="@color/accentColor"
+                        android:textSize="15sp"
+                        android:visibility="gone"
+                        app:edittextfont="ROBOTO-MEDIUM.TTF"
+                        app:edittextfontHint="ROBOTO-MEDIUM.TTF" />
+
+
+                    <com.ebabu.tooreest.customview.CustomTextView
+                        android:id="@+id/tv_date"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:layout_gravity="right"
+                        android:text="15 Jan 2016"
+                        android:textColor="@color/accentColor"
+                        android:textSize="12sp"
+                        app:edittextfont="ROBOTO-REGULAR.TTF"
+                        app:edittextfontHint="ROBOTO-REGULAR.TTF" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</android.support.v7.widget.CardView>
